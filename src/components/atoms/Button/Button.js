@@ -6,8 +6,8 @@ import { defaultTheme } from '../../../utils';
 const StyledButton = styled.button`
   padding: 6px 10px;
   font-size: 0.875rem;
-  border: 1px solid;
-  border-radius: 4px;
+  border: none;
+  border-radius: 6px;
   min-width: auto;
   cursor: pointer;
   box-sizing: border-box;
@@ -21,6 +21,9 @@ const StyledButton = styled.button`
   text-decoration: none;
   line-height: 1.5;
   text-transform: capitalize;
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryHoverColor};
+  }
 `;
 
 const Button = ({ children, variant, className, referenceClass, ...rest }) => {

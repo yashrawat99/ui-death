@@ -11,10 +11,7 @@ const StyledButton = styled.button`
   min-width: auto;
   cursor: pointer;
   box-sizing: border-box;
-  font-weight: ${({ theme }) => {
-    console.log(theme);
-    return theme.primaryFontWeight;
-  }};
+  font-weight: ${({ theme }) => theme.primaryFontWeight};
   font-family: 'Baloo 2', sans-serif;
   display: inline-flex;
   position: relative;
